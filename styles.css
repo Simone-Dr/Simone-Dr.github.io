@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-size:14px;
     line-height:1.5; 
+    color: rgb(40,40,40); 
+    background: #F4F4F4; 
   }
 
 h2{
@@ -27,7 +29,7 @@ a{
 
 .color {
 	background-color: rgb(40,40,40);
-	color: white;
+	color: #F4F4F4;
 }
 
 .item:hover {
@@ -35,11 +37,11 @@ a{
 }
 
 .item{
-	padding: 20px; 
+	padding: 10px; 
 	width:100%;
 	text-align: center;
 	text-decoration: none;
-	font-size: 140%;
+	font-size: 22px;
 }
 
 .box{
@@ -52,9 +54,10 @@ a{
 
 .black {
 	color: #CC99FF; 
-	text-align: left;
 }
 
-.white {
-	text-align: right;	
+
+::selection {
+	background: #CC99FF; 
+	color: rgb(40,40,40); 
 }
