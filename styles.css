@@ -1,13 +1,13 @@
 body {
     font-family: 'Abel';
     margin: 0;
-    font-size:14px;
+    font-size:16px;
     line-height:1.5; 
     color: rgb(40,40,40); 
     background: #F4F4F4; 
   }
 
-h2{
+h2 {
 	font-size:30px;
 	font-family:"Segoe UI", Arial, sans-serif;
 	font-weight:350;
@@ -15,14 +15,23 @@ h2{
 	letter-spacing: 4px ; 
 }
 
-a{
+a {
 	color:white; 			
+}
+
+img {
+	border-radius: 8px;
+    height: auto; 
+    align-self: center;
+    margin: 30px; 
+    
+    max-width: 40%; 
 }
 
 
 .top {
 	position: fixed; 
-	width:100%;
+	width: 100%;
 	top: 0;
 	text-align: center;
 }
@@ -32,7 +41,7 @@ a{
 	color: #F4F4F4;
 }
 
-.item:hover {
+a:hover {
 	color: #CC99FF;
 }
 
@@ -49,13 +58,28 @@ a{
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
-	max-width: 850px; 
+	max-width: 870px;  
 }
 
 .black {
 	color: #CC99FF; 
 }
 
+.flexbox {
+	display: flex; 
+}
+
+.button {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border: 1px solid #CC99FF;
+}
 
 ::selection {
 	background: #CC99FF; 
