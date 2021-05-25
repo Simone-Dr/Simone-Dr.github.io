@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<title>Simone-Dr</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <title>Simone-Dr</title>
+</head>
 
+<body>
 
 
   <!-- Navigation -->
   <div class="top">
     <div class="color">
       <a href="#About Me" class="item">About Me</a>
-       <a href="#Solar System" class="item">Solar System</a>
+      <a href="#Solar System" class="item">Solar System</a>
       <a href="#Calculator" class="item">Calculator</a>
       <a href="#Sorting Visualizer" class="item">Sorting Visualizer</a>
       <a href="#NoControl" class="item">NoControl</a>
@@ -24,20 +29,34 @@
     </p>
   </div>
 
-  <!-- SortingVisualizer -->
+  <!-- Solar System -->
   <div class="color" id="Solar System">
-    <div class="box" style="text-align: right">
-      <h2 class= "black">Solar System</h2>
+    <div class="box" >
         <div class= flexbox>   
           <img src="images/Solarsystem.PNG">
-          <p style="text-align: right;">This is a two-dimensional simulation of our solar system to scale, written in Javascript while using the Keplerian Elements for calculating the positions. It shows real-time planetary movement at the current date or a manually set date. It is possible to change the scale of the planets and the sun. Clicking on a planet reveals further information including the velocity, mass, distance from the sun and much more. The plotting is done with p5.js. The way the positions are calculated is explained on the GitHub readMe.
-          <br>
-          <br>
+          <div class = "right">
+            <h2 class= "black">Solar System</h2>
+            <p>This is a two-dimensional simulation of our solar system to scale, written in Javascript while using the Keplerian Elements for calculating the positions. It shows real-time planetary movement at the current date or a manually set date. It is possible to change the scale of the planets and the sun. Clicking on a planet reveals further information including the velocity, mass, distance from the sun and much more. The plotting is done with p5.js. The way the positions are calculated is explained on the GitHub readMe.
+            </p>
 
-          <a href="https://github.com/Simone-Dr/SolarSystem" class="button" target="_blank" rel="noopener noreferrer"> Code </a>
-          <a href="https://simone-dr.github.io/SolarSystem/" class="button" target="_blank" rel="noopener noreferrer"> Website </a> 
+            <a href="https://simone-dr.github.io/SolarSystem/" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                Live Version
+              </span>
+              <span class="button__icon">
+                <ion-icon name="eye-outline"></ion-icon> 
+              </span>
+            </a>
 
-          </p>       
+            <a href="https://github.com/Simone-Dr/SolarSystem" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                View Code
+              </span>
+              <span class="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </a>
+          </div>  
       </div>         
     </div>
   </div>
@@ -46,15 +65,30 @@
   <!-- Calculator -->
   <div class="color" id="Calculator">
     <div class= "box" style="text-align: left;">
-      <h2 class="black">Calculator</h2>
       <div class= flexbox>
-        <p style="text-align: left;"> This is a scientific calculator using the Shunting-Yard-Algorithm to transform the infix expression (7 * 2) to postfix (7 2 *). It includes binary Operations (+, -, *, /, ^) and unary Operations (sin, cos, tan, √, log, ln). It is also possible to switch between radians and degrees. The way the Shunting-Yard-Algorithm works is explained on the GitHub readMe.
-        <br>
-        <br>
-        <a href="https://github.com/Simone-Dr/scientificCalculator" class="button" target="_blank" rel="noopener noreferrer"> Code </a>
-        <a href="https://simone-dr.github.io/scientificCalculator/" class="button" target="_blank" rel="noopener noreferrer"> Website </a> 
-        </p>  
+        <div class = "left">
+            <h2 class= "black">Calculator</h2>
+            <p>This is a scientific calculator using the Shunting-Yard-Algorithm to transform the infix expression (7 * 2) to postfix (7 2 *). It includes binary Operations (+, -, *, /, ^) and unary Operations (sin, cos, tan, √, log, ln). It is also possible to switch between radians and degrees. The way the Shunting-Yard-Algorithm works is explained on the GitHub readMe.
+            </p>
 
+            <a href="https://github.com/Simone-Dr/scientificCalculator" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                View Code
+              </span>
+              <span class="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </a>
+
+            <a href="https://simone-dr.github.io/scientificCalculator" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                Live Version
+              </span>
+              <span class="button__icon">
+                <ion-icon name="eye-outline"></ion-icon> 
+              </span>
+            </a>
+          </div> 
         <img src="images/CalculatorImage.PNG"> 
       </div>     
     </div>
@@ -64,36 +98,69 @@
 
   <!-- SortingVisualizer -->
   <div class="color" id="Sorting Visualizer">
-    <div class="box" style="text-align: right">
-      <h2 class= "black">Sorting Visualizer</h2>
+    <div class="box" >
         <div class= flexbox>   
           <img src="images/SortingVisualizerImage.PNG">
-          <p style="text-align: right;"> A sorting algorithm visualization that includes Bubblesort, Selectionsort, Insertionsort and Quicksort aswell as the possiblility to change the sorting speed and number of elements in the array.
-          <br>
-          <br>
-          <a href="https://github.com/Simone-Dr/SortingVisualizer" class="button" target="_blank" rel="noopener noreferrer"> Code </a>
-          <a href="https://simone-dr.github.io/SortingVisualizer/" class="button" target="_blank" rel="noopener noreferrer"> Website </a> 
-          </p>       
+          <div class = "right">
+            <h2 class= "black">Sorting Visualizer</h2>
+            <p> A sorting algorithm visualization that includes Bubblesort, Selectionsort, Insertionsort and Quicksort aswell as the possiblility to change the sorting speed and number of elements in the array. Each elements value is represented by the size of the bar, the algorithm sorts them by placing the smallest elements on the left and the biggest elements on the right. The plotting is done with p5.js. 
+            </p>
+            
+            <a href="https://simone-dr.github.io/SortingVisualizer" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                Live Version
+              </span>
+              <span class="button__icon">
+                <ion-icon name="eye-outline"></ion-icon> 
+              </span>
+            </a>
+
+            <a href="https://github.com/Simone-Dr/SortingVisualizer" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                View Code
+              </span>
+              <span class="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </a>
+          </div>   
       </div>  
     </div>
   </div>
 
+
+
   <!-- NoControl -->
   <div class="color" id="NoControl">
-    <div class= "box" style="text-align: left;">
-      <h2 class="black">NoControl</h2>
+    <div class= "box">
       <div class= flexbox>
-        <p style="text-align: left;"> A Game, created in Ludum Dare 45 in 48 hours, about a ball trying to get control. Created with Unity and C#. In NoControl you have to get your control back by finding the keys of your keyboard.
-        <br>
-        <br>
-        <a href="https://github.com/Simone-Dr/NoContol" class="button" target="_blank" rel="noopener noreferrer"> Code </a>
-        <a href="https://www.newgrounds.com/portal/view/739638" class="button" target="_blank" rel="noopener noreferrer"> Website </a> 
-        </p>  
+        <div class = "left">
+            <h2 class= "black">NoControl</h2>
+            <p>A Game, created in Ludum Dare 45 in 48 hours, about a ball trying to get control. Created with Unity and C#. In NoControl you have to get your control back by finding the keys of your keyboard.
+            </p>
+
+            <a href="https://github.com/Simone-Dr/NoContol" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                View Code
+              </span>
+              <span class="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </a>
+
+            <a href="https://www.newgrounds.com/portal/view/739638" class="button" target="_blank" rel="noopener noreferrer">
+              <span class="button__text">
+                Live Version
+              </span>
+              <span class="button__icon">
+                <ion-icon name="eye-outline"></ion-icon> 
+              </span>
+            </a>
+          </div> 
         <img src="images/NoControlImage.png"> 
       </div>      
     </div>
   </div>
-
-
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -20,12 +20,14 @@ a {
 }
 
 img {
-	border-radius: 8px;
-    height: auto; 
+	border-radius: 10px;
+    height: auto;
     align-self: center;
     margin: 30px; 
-    
     max-width: 40%; 
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid #999; 
 }
 
 
@@ -34,6 +36,7 @@ img {
 	width: 100%;
 	top: 0;
 	text-align: center;
+	 z-index: 1;
 }
 
 .color {
@@ -43,6 +46,18 @@ img {
 
 a:hover {
 	color: #CC99FF;
+}
+
+.button__text,
+.button__icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 5px;
+	height: 100%;
+}
+
+.button__icon{
+	font-size: 1.5em;
 }
 
 .item{
@@ -69,16 +84,30 @@ a:hover {
 	display: flex; 
 }
 
+.right {
+	float:right;
+	text-align: right;
+}
+
+.left {
+	float: left;
+	text-align: left;
+}
+
 .button {
-  border: none;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-  border: 1px solid #CC99FF;
+	border: none;
+	display: flex; 
+	height: 25px;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 16px;
+	margin: 2px 5px;
+	margin-left: 0px;
+	cursor: pointer;
+	border: 1px solid #CC99FF;
+	float: inherit;
 }
 
 ::selection {
