@@ -24,10 +24,11 @@ img {
     height: auto;
     align-self: center;
     margin: 30px; 
-    max-width: 40%; 
     padding: 5px;
     background: rgba(255, 255, 255, 0.1);
     border:1px solid #999; 
+    max-width: 40%;
+
 }
 
 
@@ -36,7 +37,7 @@ img {
 	width: 100%;
 	top: 0;
 	text-align: center;
-	 z-index: 1;
+	z-index: 1;
 }
 
 .color {
@@ -82,6 +83,28 @@ a:hover {
 
 .flexbox {
 	display: flex; 
+	flex-direction: row;
+}
+
+@media (max-width: 800px) {
+	.flexbox {
+    flex-direction: column;
+	}
+
+  img {
+	max-width: 90%;
+	}
+
+  .item {
+  	display: flex;
+  	font-size: 16px;
+  	padding: 5px 20px; 
+  	text-align: right;
+	}
+
+  .top {
+	text-align: center;
+	}
 }
 
 .right {
