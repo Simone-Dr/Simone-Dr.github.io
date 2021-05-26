@@ -94,17 +94,6 @@ a:hover {
   img {
 	max-width: 90%;
 	}
-
-  .item {
-  	display: flex;
-  	font-size: 16px;
-  	padding: 5px 20px; 
-  	text-align: right;
-	}
-
-  .top {
-	text-align: center;
-	}
 }
 
 .right {
