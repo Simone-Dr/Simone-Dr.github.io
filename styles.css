@@ -79,7 +79,7 @@ a:hover {
 }
 
 .box{
-	padding: 64px 16px 64px;
+	padding: 5px 16px 30px;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
@@ -151,6 +151,19 @@ a:hover {
 .container {
 	width: 29%;
 	height: 21em;
+	padding: 10px;
+	margin: auto;	
+	overflow: hidden;
+	overflow-y:auto;
+	background: rgb(40,40,40);
+    border:3px solid #CC99FF; 
+ 	text-align: center;
+ 	position: relative;
+}
+
+.container2 {
+	width: 45%;
+	height: 27em;
 	padding: 10px;
 	margin: auto;	
 	overflow: hidden;
